@@ -1,0 +1,152 @@
+:root {
+  --persian_green: #00a19a;
+  --eminence: #82368c;
+  --lilac: #bca3ce;
+  --violet: #9d7eb8;
+}
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #bca3ce;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-nav .nav-link {
+  color: var(--lilac);
+  font-size: 110%;
+}
+
+.navbar-toggler {
+  background-color: var(--lilac);
+}
+
+.navbar-brand {
+  margin-right: 1rem;
+  width: auto;
+}
+
+.dropdown-menu {
+  background-color: black;
+}
+
+.dropdown-item {
+  color: var(--lilac);
+}
+
+.dropdown-item:hover {
+  background-color: var(--lilac);
+  color: black;
+}
+
+.btn-outline-success {
+  border-color: var(--lilac);
+  color: var(--lilac);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--lilac);
+  border-color: var(--lilac);
+  color: black;
+}
+
+.contacto {
+  margin-left: 10%;
+  padding: 2%;
+  text-align: left;
+}
+
+.icon {
+  width: 30%;
+}
+
+#fotoHead {
+  width: 100%;
+  min-height: fit-content;
+}
+
+#imgInicio {
+  width: 20rem;
+}
+
+button {
+  background-color: var(--eminence);
+  border-radius: 5px;
+  color: beige;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#inicioItem {
+  background-color: beige;
+  margin: 5% 25%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: var(--lilac);
+}
+
+footer img {
+  width: 9%;
+  padding: 1% 3%;
+}
+
+img.imgQS {
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo {
+  text-align: center;
+  margin: 5px;
+}
+
+.parrafoQS {
+  margin: 4%;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.imgMezcla {
+  text-align: center;
+}
+
+.imgAl {
+  width: 18em;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    margin-bottom: 1em;
+  }
+  #imgInicio {
+    width: 14em;
+  }
+  #inicioItem {
+    background-color: beige;
+    margin: 5% 12%;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  footer img {
+    width: 45px;
+    padding: 3%;
+  }
+  .imgAl {
+    width: 12em;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
