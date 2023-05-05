@@ -89,16 +89,28 @@ body{
 button{
     background-color: $eminence;
     border-radius: 5px;
+    cursor: pointer; /* Cursor en forma de mano */
+ 
     color: beige;
     padding: 10px;
     font-size: 20px;
+    transition: transform 0.2s ease-in-out;
+    &:hover{
+        background-color: $violet;
+    }
+    
 }
+
 
 #inicioItem{
     background-color:beige;
     margin:5% 25%;
     padding: 5px;
     border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 footer{
