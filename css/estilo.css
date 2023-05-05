@@ -1,10 +1,4 @@
-:root {
-  --persian_green: #00a19a;
-  --eminence: #82368c;
-  --lilac: #bca3ce;
-  --violet: #9d7eb8;
-}
-
+@charset "UTF-8";
 * {
   font-family: "Josefin Sans", sans-serif;
 }
@@ -18,12 +12,12 @@ body {
 }
 
 .navbar-nav .nav-link {
-  color: var(--lilac);
+  color: #bca3ce;
   font-size: 110%;
 }
 
 .navbar-toggler {
-  background-color: var(--lilac);
+  background-color: #bca3ce;
 }
 
 .navbar-brand {
@@ -36,29 +30,29 @@ body {
 }
 
 .dropdown-item {
-  color: var(--lilac);
+  color: #bca3ce;
 }
 
 .dropdown-item:hover {
-  background-color: var(--lilac);
+  background-color: #bca3ce;
   color: black;
 }
 
 .btn-outline-success {
-  border-color: var(--lilac);
-  color: var(--lilac);
+  border-color: #bca3ce;
+  color: #bca3ce;
 }
 
 .btn-outline-success:hover {
-  background-color: var(--lilac);
-  border-color: var(--lilac);
+  background-color: #bca3ce;
+  border-color: #bca3ce;
   color: black;
 }
 
-.contacto {
-  margin-left: 10%;
-  padding: 2%;
-  text-align: left;
+.nav-link:hover {
+  background-color: #bca3ce;
+  border-color: #bca3ce;
+  color: black;
 }
 
 .icon {
@@ -75,7 +69,7 @@ body {
 }
 
 button {
-  background-color: var(--eminence);
+  background-color: #82368c;
   border-radius: 5px;
   color: beige;
   padding: 10px;
@@ -92,7 +86,7 @@ button {
 footer {
   background-color: black;
   text-align: center;
-  color: var(--lilac);
+  color: #bca3ce;
 }
 
 footer img {
@@ -127,12 +121,76 @@ img.imgQS {
   width: 18em;
 }
 
+.iconCont {
+  display: inline;
+  width: 30px;
+  position: relative;
+}
+
+form ul li button {
+  margin-left: 22%;
+}
+
+form ul li {
+  list-style: none;
+  margin: 2px;
+  
+}
+
+label {
+  /* Tamaño y alineación form*/
+  display: inline-block;
+  width: 95px;
+  text-align: left;
+  
+}
+
+/*contacto */
+.contacto {
+  margin-left: 7%;
+  padding: 2%;
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  margin-left: 9%;
+  padding: 2%;
+  text-align: left;
+}
+
+.item {
+  padding: 20px;
+  text-align: left;
+  margin: 10px;
+}
+
+.item-1 {
+  grid-column-start: 1; /* inicio en la columna 1 */
+  grid-column-end: 2; /* fin en la columna 2 */
+}
+
+.item-2 {
+  grid-column-start: 2; /* inicio en la columna 2 */
+  /* fin en la columna 3 (no existe, pero como solo hay dos columnas, se entiende que termina en la última) */
+}
+
 @media (max-width: 768px) {
   .navbar-toggler {
     margin-bottom: 1em;
   }
   #imgInicio {
     width: 14em;
+  }
+  label{
+    display: none;
+    width: auto;
+    
+    
+
   }
   #inicioItem {
     background-color: beige;
@@ -147,6 +205,18 @@ img.imgQS {
   .imgAl {
     width: 12em;
   }
+  .grid-container {
+    grid-template-columns: 1fr; /* Cambiamos a una sola columna */
+    grid-template-rows: auto auto;
+  }
+  label {
+    /* Tamaño y alineación form*/
+    display: inline-block;
+    width: 95%;
+    text-align: left;
+    
+  }
+  
 }
 
 /*# sourceMappingURL=estilo.css.map */
